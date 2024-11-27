@@ -1,0 +1,57 @@
+.heart {
+    width: 20px;
+    height: 20px;
+    color: red;
+    opacity: 0.75;
+}
+
+.falling-heart {
+    position: absolute;
+    animation: fall linear forwards;
+    z-index: 999;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.falling-left-heart {
+    position: absolute;
+    animation: fall-left linear forwards;
+    z-index: 999;
+}
+
+@keyframes fall-left {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(100vh) translateX(100vw);
+        opacity: 0;
+    }
+}
+
+.falling-right-heart {
+    position: absolute;
+    animation: fall-right linear forwards;
+    z-index: 999;
+}
+
+@keyframes fall-right {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-100vw);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,34 @@
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.font-whisper {
+    font-family: 'Whisper', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px
+}

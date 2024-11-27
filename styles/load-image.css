@@ -1,0 +1,50 @@
+.lazy-load-image {
+    width: 100%;
+    height: auto;
+}
+
+.image-load-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 100% 0 0); /* Initially hides the image to the right */
+    animation: loadFromLeft 3s forwards;
+}
+
+@keyframes loadFromLeft {
+    0% {
+        clip-path: inset(0 100% 0 0); /* Start with the image clipped to the right */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* End with no clipping (full image visible) */
+    }
+}
+
+.image-load-right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0 0 0 100%); /* Initially hide the image to the left */
+    animation: loadFromRight 3s forwards; /* Animates from left to right */
+}
+
+@keyframes loadFromRight {
+    0% {
+        clip-path: inset(0 0 0 100%); /* Start with the image clipped on the left */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* End with the image fully visible */
+    }
+}
+
+/*.image-loader {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    clip-path: inset(0 100% 0 0); !* Initially hides the image to the right *!*/
+/*    transition: clip-path 1s ease; !* Smooth transition when animated *!*/
+/*}*/
+
+/*.loaded {*/
+/*    clip-path: inset(0 0 0 0); !* Full image visible *!*/
+/*}*/

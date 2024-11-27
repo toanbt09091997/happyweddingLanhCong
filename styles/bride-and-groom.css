@@ -1,0 +1,27 @@
+#bride-and-groom {
+    display: flex;
+    justify-content: center;
+}
+
+#bride-and-groom .bride-and-groom-image-wrapper {
+    width: fit-content;
+}
+
+#bride-and-groom .bride-and-groom-image-wrapper {
+    padding: 12px;
+    background-color: rgba(1, 26, 1, 0.7);
+    animation: load-bride-and-groom-image-wrapper 1s forwards; /* Animates from left to right */
+}
+
+@keyframes load-bride-and-groom-image-wrapper {
+    0% {
+        clip-path: inset(0 100% 0 100%); /* Start with the image clipped on the left */
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* End with the image fully visible */
+    }
+}
+
+#bride-and-groom .bride-and-groom-image {
+    max-height: 500px;
+}
