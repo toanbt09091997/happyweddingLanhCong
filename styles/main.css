@@ -2,22 +2,22 @@ body {
     overflow: hidden;
 }
 /* Scrollbar track */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 2px;  /* Horizontal scrollbar width */
 }
 
 /* Scrollbar handle */
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border-radius: 10px;
 }
 
 /* Scrollbar handle when hovering */
-body::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
     background-color: grey;
 }
 
 /* Scrollbar track */
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
