@@ -10,7 +10,7 @@
 #bride-and-groom .bride-and-groom-image-wrapper {
     padding: 12px;
     background-color: rgba(1, 26, 1, 0.7);
-    animation: load-bride-and-groom-image-wrapper 1s forwards; /* Animates from left to right */
+    /*animation: load-bride-and-groom-image-wrapper 1s forwards; !* Animates from left to right *!*/
 }
 
 @keyframes load-bride-and-groom-image-wrapper {
@@ -22,6 +22,13 @@
     }
 }
 
-#bride-and-groom .bride-and-groom-image {
-    max-height: 500px;
+@media (min-width: 768px) {
+    #bride-and-groom .bride-and-groom-image {
+        max-height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    #bride-and-groom .bride-and-groom-image {
+        max-height: 300px;
+    }
 }

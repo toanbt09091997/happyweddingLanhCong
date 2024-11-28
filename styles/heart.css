@@ -1,11 +1,27 @@
-.heart {
+#heart-auto {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#heart-auto-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+#heart-auto-item .heart {
     width: 20px;
     height: 20px;
     color: red;
     opacity: 0.75;
 }
 
-.falling-heart {
+#heart-auto-item .falling-heart {
     position: absolute;
     animation: fall linear forwards;
     z-index: 999;
@@ -22,7 +38,7 @@
     }
 }
 
-.falling-left-heart {
+#heart-auto-item .falling-left-heart {
     position: absolute;
     animation: fall-left linear forwards;
     z-index: 999;
@@ -39,7 +55,7 @@
     }
 }
 
-.falling-right-heart {
+#heart-auto-item .falling-right-heart {
     position: absolute;
     animation: fall-right linear forwards;
     z-index: 999;

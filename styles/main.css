@@ -1,5 +1,5 @@
 body {
-    position: static;
+    overflow: hidden;
 }
 /* Scrollbar track */
 body::-webkit-scrollbar {
