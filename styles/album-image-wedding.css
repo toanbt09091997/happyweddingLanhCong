@@ -34,3 +34,17 @@
     width: 90%;
     background-color: black;
 }
+
+#album-image-wedding .footer-wrapper-anh-cuoi {
+    position: relative;
+}
+
+#album-image-wedding .footer-note-anh-cuoi {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+#album-image-wedding .footer-wrapper-anh-cuoi h1 {
+    color: white;
+}
