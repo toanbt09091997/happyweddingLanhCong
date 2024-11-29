@@ -25,7 +25,8 @@
     font-family: 'Bonheur Royale', serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 40px
+    font-size: 40px;
+    padding: 8px 0;
 }
 
 #invitation-card .tham-du {
@@ -33,6 +34,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    padding: 8px 0;
     margin-bottom: 8px;
 }
 
@@ -51,6 +53,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    padding: 8px 0;
     margin-top: 16px;
 }
 
@@ -89,6 +92,7 @@
     font-weight: 400;
     font-size: 16px;
     font-style: italic;
+    padding: 8px 0;
 }
 
 #invitation-card .lich-wrapper {
