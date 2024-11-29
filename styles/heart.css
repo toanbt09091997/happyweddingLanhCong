@@ -61,6 +61,30 @@
     z-index: 999;
 }
 
+#heart-auto .image-music {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    height: 40px;
+    width: 40px;
+    z-index: 999;
+}
+
+#heart-auto .image-music {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #df4758;
+    padding-top: 7px;
+    padding-left: 9px;
+    position: absolute;
+    z-index: 2;
+}
+
 @keyframes fall-right {
     0% {
         transform: translateY(-10%);
