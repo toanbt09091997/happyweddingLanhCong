@@ -6,6 +6,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    padding: 8px;
 }
 
 #maps .duong-ke hr {
