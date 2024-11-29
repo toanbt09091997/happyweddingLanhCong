@@ -1,7 +1,81 @@
 #count-down {
-    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.count-down {
     background-image: url("https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_9328.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.count-down .text-save-the-date {
+    position: absolute;
+    top: 4px;
+}
+
+.count-down .count-down-time {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+}
+
+.count-down .text-cung-dem-nguoc {
+    color: #532c2c;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.count-down .text-save-the-date-lv2 {
+    color: #532c2c;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Bonheur Royale', serif;
+    font-style: italic;
+}
+
+.count-down-time .text-time {
+    text-align: center;
+    width: 100%;
+    color: #bd6f6f;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.count-down-time .text-time-lv2 {
+    color: #2f2021;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.count-down-time .item-count-down-lv-2 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    display: grid;
+    padding: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3), -10px -10px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (min-width: 768px) {
+    .count-down {
+        height: 500px;
+        width: 500px;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .count-down {
+        height: 100vw;
+        width: 100vw;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+    }
 }

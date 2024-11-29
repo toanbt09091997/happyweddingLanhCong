@@ -4,8 +4,7 @@
     background-size: cover;
     background-position: 50% 0;
     width: 100%;
-    height: auto;
-    min-height: calc(100vw);
+    height: 400px;
 }
 
 #footer-thank .footer-wrapper {
@@ -71,4 +70,15 @@
     z-index: 1;
     display: inline-block;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    #footer-thank {
+        background-position: 50% 10%;
+    }
+}
+@media (max-width: 768px) {
+    #footer-thank{
+        background-position: 50% 0;
+    }
 }

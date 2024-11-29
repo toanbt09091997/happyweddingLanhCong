@@ -1,0 +1,36 @@
+#album-image-wedding {
+
+}
+
+#album-image-wedding .header-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+
+#album-image-wedding .text-album{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+}
+
+#album-image-wedding .line-hearts {
+    flex-grow: 1;
+}
+
+#album-image-wedding .duong-ke {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#album-image-wedding .duong-ke hr {
+    border: 0;
+    height: 1px;
+    margin: 2px 0;
+    width: 90%;
+    background-color: black;
+}

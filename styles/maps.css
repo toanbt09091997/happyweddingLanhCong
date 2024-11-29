@@ -2,8 +2,56 @@
 
 }
 
-#maps .maps-wrapper {
+#maps .duong-ke {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
+#maps .duong-ke hr {
+    border: 0;
+    height: 1px;
+    margin: 2px 0;
+    width: 30%;
+    background-color: black;
+}
+
+#maps .dia-diem-to-chuc {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+}
+
+#maps .maps-wrapper {
+    background-color: #d7d7d7;
+}
+
+#maps .tai-tu-gia {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#maps .dia-diem-map {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#maps .item-xem-ban-do {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 4px;
+}
+
+#maps .xem-ban-do {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 #maps .maps-iframe {
@@ -18,7 +66,7 @@
 
 #maps .iframe-map {
     width: 100%;
-    height: 450px;
+    height: 250px;
     border: 0px solid;
     border-color: rgb(213, 206, 163);
     border-radius: 4px;

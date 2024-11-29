@@ -8,10 +8,177 @@
     align-items: center;
 }
 
+#invitation-card .duong-ke {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#invitation-card .duong-ke hr {
+    border: 0;
+    height: 1px;
+    margin: 2px 0;
+    width: 30%;
+    background-color: black;
+}
+#invitation-card .thu-moi {
+    font-family: 'Bonheur Royale', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px
+}
+
+#invitation-card .tham-du {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+
 #invitation-card .invitation-card-wrapper {
     width: 100vw;
-    height: 100vh;
-    background-position: center;
+    height: 500px;
+    background-position: 50% 30%;
     background-image: url("https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_0253.jpg");
     background-size: cover;
+}
+#invitation-card .tiec-mung {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+#invitation-card .vao-luc {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#invitation-card .thoi-gian-moi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#invitation-card .thoi-gian-moi .thang {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#invitation-card .thoi-gian-moi .ngay {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+}
+#invitation-card .thoi-gian-moi .nam {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#invitation-card .thoi-gian-moi .soc {
+    width: 2px;
+    height: 36px;
+    background-color: black;
+}
+
+#invitation-card .text-tuc-ngay {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#invitation-card .lich-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#invitation-card .lich {
+    display: grid;
+    justify-content: center;
+}
+
+
+.lich .lich-header {
+    display: flex;
+    font-size: 40px;
+    font-family: 'Whisper', serif;
+    font-weight: 300;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lich .lich-header .nam {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.lich .lich-form {
+
+}
+.lich .lich-form-header {
+    display: flex;
+}
+
+.lich .lich-form-header .o-lich-header {
+    width: calc(100vw/7);
+    text-align: center;
+    background-color: #472c09;
+    color: white;
+    padding: 2px;
+    font-family: 'Whisper', serif;
+    font-size: 12px;
+}
+
+.lich .lich-hang {
+    display: flex;
+}
+
+.lich .lich-hang .o-lich {
+    width: calc(100vw/7);
+    height: calc(100vw/7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #534028;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #d9d5d5;
+    padding: 1px;
+}
+
+.lich .lich-hang .o-heart {
+    background-image: url("../images/2109bba9e19c8f63ceff5c5635723639.png");
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    #invitation-card .lich {
+        width: 700px;
+    }
+
+    .lich .lich-form-header .o-lich-header {
+        width: 100px;
+    }
+    .lich .lich-hang .o-lich {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width: 768px) {
+    #invitation-card .lich {
+        width: 100%;
+    }
 }
