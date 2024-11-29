@@ -19,6 +19,8 @@
     <meta property="og:description"
           content="Phạm Công &amp; Lan Anh - Our wedding date: 2022-12-08 | Điều tuyệt vời nhất mà bạn từng học là yêu và được yêu để đáp lại"/>
     <meta property="og:image" content="https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_9976.jpg"/>
+    <meta property="og:image:width" content="4480"/>
+    <meta property="og:image:height" content="6720"/>
     <meta property="og:image:url" content="https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_9976.jpg"/>
     <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_9976.jpg"/>
     <!--    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>-->
@@ -63,6 +65,7 @@
 <link rel="stylesheet" href="styles/invitation-card.css">
 <link rel="stylesheet" href="styles/maps.css">
 <link rel="stylesheet" href="styles/footer.css">
+<link rel="stylesheet" href="styles/count-down.css">
 
 <body>
 <div id="heart-auto">
@@ -139,26 +142,26 @@
         </div>
         <!--    thiệp mời-->
         <div id="invitation-card" class="invitation-card">
-            <div>
+            <div class="text-align-center w-100">
                 Thư mời
             </div>
-            <div>
+            <div class="text-align-center w-100">
                 tham dự lễ cưới của Phạm Công & Lan Anh
             </div>
             <div class="invitation-card-wrapper"></div>
-            <div>
+            <div class="text-align-center w-100">
                 Tiệc mừng lễ vu quy
             </div>
-            <div>
+            <div class="text-align-center w-100">
                 vào lúc <span> 16h00 | Thứ 7 </span>
             </div>
-            <div>
+            <div class="text-align-center w-100">
                 Tháng 12 | 07 | 2024
             </div>
-            <div>
+            <div class="text-align-center w-100">
                 Tức ngày 07 tháng 11 năm Giáp Thìn
             </div>
-            <div>
+            <div class="w-100">
                 lịch
             </div>
         </div>
@@ -166,7 +169,7 @@
         <div id="count-down" class="count-down">
             <div>Cùng đếm ngược thời gian</div>
             <div>Save the date</div>
-
+            <div id="time"></div>
             đếm ngược
 
         </div>
@@ -360,6 +363,36 @@
     setInterval(() => createHearts('falling-heart'), 500); // Tạo trái tim mỗi giây
     setInterval(() => createHearts('falling-left-heart'), 500); // Tạo trái tim mỗi giây
     setInterval(() => createHearts('falling-right-heart'), 500); // Tạo trái tim mỗi giây
+</script>
+
+<script>
+    // Thiết lập thời gian đếm ngược (ví dụ: 1 ngày, 5 giờ, 30 phút, 15 giây)
+    let countDownDate = new Date("Dec 31, 2024 23:59:59").getTime(); // Ngày và giờ đích đến
+
+    // Cập nhật bộ đếm ngược mỗi 1 giây
+    let x = setInterval(function() {
+
+        // Lấy thời gian hiện tại
+        let now = new Date().getTime();
+
+        // Tính toán khoảng thời gian còn lại
+        let distance = countDownDate - now;
+
+        // Tính toán ngày, giờ, phút, giây
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Hiển thị thời gian còn lại
+        document.getElementById("time").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // Nếu thời gian kết thúc
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("time").innerHTML = "Thời gian đã hết!";
+        }
+    }, 1000);
 </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
