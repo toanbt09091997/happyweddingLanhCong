@@ -44,7 +44,7 @@
     width: 100vw;
     height: 500px;
     background-position: 50% 30%;
-    background-image: url("https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/_MY_0253.jpg");
+    background-image: url("../images/_MY_0253.jpg");
     background-size: cover;
 }
 
@@ -158,7 +158,7 @@
 }
 
 .lich .lich-hang .o-heart {
-    background-image: url("https://raw.githubusercontent.com/toanbt09091997/happyweddingLanhCong/main/images/2109bba9e19c8f63ceff5c5635723639.png");
+    background-image: url("../images/2109bba9e19c8f63ceff5c5635723639.png");
     background-size: cover;
 }
 
